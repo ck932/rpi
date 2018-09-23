@@ -29,7 +29,7 @@ June 10, 2018 5:49 PM
 
 
 ![CSDN图标](https://img-blog.csdn.net/20150316184625949 "这是CSDN的图标")
-![raspberrypi](/home/pi/rpi/raspberrypi.png  "this is raspbery pi")
+![raspberrypi](/home/henry/rpi/raspberrypi.png  "this is raspbery pi")
 
 
 
