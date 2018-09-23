@@ -534,9 +534,9 @@ sudo vncserver :1 -geometry 1024x768 -depth 24，以上是以 root 自行， 其
 **20180430 参照下面设定**
 
 **中文输入法的安装**
-第一步：我们先进行scim的安装： sudo apt-get install scim.
-第二步：安装中文scim表格： sudo apt-get install scim-tables-zh 
-第三步：安装中文拼音： sudo apt-get install scim-pinyin
+1. 第一步：我们先进行scim的安装： sudo apt-get install scim.
+2. 第二步：安装中文scim表格： sudo apt-get install scim-tables-zh 
+3. 第三步：安装中文拼音： sudo apt-get install scim-pinyin
 
 
 ### End 中文显示安装
