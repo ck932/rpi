@@ -524,7 +524,7 @@ sudo vncserver :1 -geometry 1024x768 -depth 24，以上是以 root 自行， 其
 安装locale
 
 1. 第一步，先为终端进行相关更新： sudo apt-get update 
-2. 第二步：为我们debian系统安装中文字库： sudo apt-get install ttf-wqy-microhei
+2. 第二步：为我们debian系统安装中文字库： sudo apt-get install ttf-wqy-zenhei
 3. 第三步：我们可以更改系统中的菜单界面，将其变成中文的，
 
 指令是：sudo dpkg-reconfigure locales 我们用空格键勾选前面带有 “zhCN” 的选项，
@@ -534,7 +534,7 @@ sudo vncserver :1 -geometry 1024x768 -depth 24，以上是以 root 自行， 其
 **20180430 参照下面设定**
 
 **中文输入法的安装**
-第一步我们先进行scim的安装： sudo apt-get install scim 在文件下载完毕后会进行自我的安装和解压缩，如果遇到让用户选择Y或N，请选择Y并按回车。 
+第一步：我们先进行scim的安装： sudo apt-get install scim.
 第二步：安装中文scim表格： sudo apt-get install scim-tables-zh 
 第三步：安装中文拼音： sudo apt-get install scim-pinyin
 
