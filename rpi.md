@@ -1305,7 +1305,7 @@ Config：
 因为Git是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和Email地址。
 --global 是全局设定，可以不用。
 
-创建版本库
+### 创建版本库
 什么是版本库呢？版本库又名仓库，英文名repository，你可以简单理解成一个目录，
 这个目录里面的所有文件都可以被Git管理起来，每个文件的修改、删除，Git都能跟踪，
 以便任何时刻都可以追踪历史，或者在将来某个时刻可以“还原”。
@@ -1354,7 +1354,12 @@ $<font color=red>如果每次 git push, 要求输入 username, 更改以下设�
 拉出：git pull--------------git clone https://github.com/yck32/rpi.<font color=red>git</font>
 推送：git push
 
-### 显示情性访
+git clone https://github.com/ck932/rpi.git
+代表从库中，完全 clone 整个文件到本地。
+
+
+
+##### 显示情性访
 1. <font color=blue>@@ -1,4 +1,4 @@</font> 此列为状态列，
 2. 1. <font color=red>-abbbbbbb</font>减号，红色代表 delete.
 3. <font color=green>+bbbbbbb</font>加号，绿色代表 append.
