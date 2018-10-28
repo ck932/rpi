@@ -1299,8 +1299,15 @@ sudo apt-get install git
 Config：
 1. $ git config --global user.name "Your Name"
 2. $ git config --global user.email "email@example.com"
+<font color=red>yck932@qq.com</font>
 因为Git是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和Email地址。
 --global 是全局设定。
+
+<font color=red>
+A) git add . (dot 代表全部文件)
+B) git commit -m "abc"
+C) git push
+</font>
 
 
 ### 创建版本库
