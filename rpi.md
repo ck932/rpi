@@ -1,13 +1,10 @@
-June 30, 2018 5:49 AM
-June 12, 2018 10:36 AMJune 11, 2018 3:27 PM
-June 10, 2018 5:49 PM
-
-
+October 28, 2018 12:43 PM
+rpi.md
 
 &nbsp;<font color=#0099ff size=4 face="黑体">黑体</font>
-*车体*
+*斜体*
 **加粗**
-\\*#--反车线可显示特殊符号。
+\\*#--反斜线可显示特殊符号。
 <u>我是 underline</u>
 &nbsp;<----------这里有一个空格。
 1234
@@ -1294,7 +1291,7 @@ b)edit /etc/dhcpcd.conf, add static netmask 255.255.255.0 , done
 
 
 
-### [Git](https://git-scm.com/book/zh/v1/%E8%B5%B7%E6%AD%A5)
+## [Git](https://git-scm.com/book/zh/v1/%E8%B5%B7%E6%AD%A5)
 
 安装：
 sudo apt-get install git
@@ -1303,9 +1300,11 @@ Config：
 1. $ git config --global user.name "Your Name"
 2. $ git config --global user.email "email@example.com"
 因为Git是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和Email地址。
---global 是全局设定，可以不用。
+--global 是全局设定。
+
 
 ### 创建版本库
+
 什么是版本库呢？版本库又名仓库，英文名repository，你可以简单理解成一个目录，
 这个目录里面的所有文件都可以被Git管理起来，每个文件的修改、删除，Git都能跟踪，
 以便任何时刻都可以追踪历史，或者在将来某个时刻可以“还原”。
