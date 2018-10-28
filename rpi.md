@@ -1303,8 +1303,11 @@ Config：
 因为Git是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和Email地址。
 --global 是全局设定。
 
-<font color=red>
-A) git add . (dot 代表全部文件)
+提取整个文件库：
+1. <font color=red>git clone https://github.com/ck932/rpi.git</font>
+
+0) git diff 要在 git add . 之前，否则无效。
+<font color=red>A) git add . (dot 代表全部文件)
 B) git commit -m "abc"
 C) git push
 </font>
@@ -1365,9 +1368,9 @@ git clone https://github.com/ck932/rpi.git
 
 
 
-##### 显示情性访
+##### 显示
 1. <font color=blue>@@ -1,4 +1,4 @@</font> 此列为状态列，
-2. 1. <font color=red>-abbbbbbb</font>减号，红色代表 delete.
+2. <font color=red>-abbbbbbb</font>减号，红色代表 delete.
 3. <font color=green>+bbbbbbb</font>加号，绿色代表 append.
 4. 白色，代表本文，以示对照。
 
@@ -1599,7 +1602,7 @@ done!
 
 
 
-### ArclinuxARM
+## <font color=blue>ArclinuxARM</font>
 
 1. Start fdisk to partition the SD card:
 fdisk /dev/sdX
@@ -1652,4 +1655,30 @@ fdisk /dev/sdX
 10. Initialize the pacman keyring and populate the Arch Linux ARM package signing keys:
     pacman-key --init
     pacman-key --populate archlinuxarm
+
+## End ArchLinux
+
+
+
+
+## <font color=purple>Mailsend</font>
+
+#### Following scripts is for <font color=red>CHINA</font>
+
+\#! /bin/bash
+
+/usr/local/bin/mailsend -t yckxxx@tom.com -f yckxxx@tom.com -smtp smtp.tom.com  -port 25  -sub "`date "+%y%m%d %H:%M:%S"` [`hostname`] Hi, Henry I'm ON." -auth -user yckxxx@tom.com -pass b8xxxxxx -M "the 3rd  letter."
+
+
+#### Following scripts is for <font color=red>GOOGLE</font>
+
+\#!/bin/bash
+
+sleep 20
+
+/root/mailsend/bin/mailsend -smtp smtp.gmail.com -port 587 -auth -starttls -f vpsserver9@gmail.com -t yckxxx@tom.com   -sub "`date +"%y%m%d %H:%M:%S"` [`hostname`] `ip addr show venet0 | grep venet0:0 | cut -d ' ' -f 5-6`" -M "`journalctl | tail -n 15`" -user vpsserver9 -pass Abcdxxxxx
+
+
+
+
 
