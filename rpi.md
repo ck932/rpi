@@ -1667,7 +1667,7 @@ fdisk /dev/sdX
 
 \#! /bin/bash
 
-/usr/local/bin/mailsend -t yckxxx@tom.com -f yckxxx@tom.com -smtp smtp.tom.com  -port 25  -sub "`date "+%y%m%d %H:%M:%S"` [`hostname`] Hi, Henry I'm ON." -auth -user yckxxx@tom.com -pass b8xxxxxx -M "the 3rd  letter."
+/usr/local/bin/mailsend -t yckxxx@tom.com -f yckxxx@tom.com -smtp smtp.tom.com  -port 25  -sub "\`date "+%y%m%d %H:%M:%S"\` [\`hostname\`] Hi, Henry I'm ON." -auth -user yckxxx@tom.com -pass b8xxxxxx -M "the 3rd  letter."
 
 
 #### Following scripts is for <font color=red>GOOGLE</font>
@@ -1676,7 +1676,7 @@ fdisk /dev/sdX
 
 sleep 20
 
-/root/mailsend/bin/mailsend -smtp smtp.gmail.com -port 587 -auth -starttls -f vpsserver9@gmail.com -t yckxxx@tom.com   -sub "`date +"%y%m%d %H:%M:%S"` [`hostname`] `ip addr show venet0 | grep venet0:0 | cut -d ' ' -f 5-6`" -M "`journalctl | tail -n 15`" -user vpsserver9 -pass Abcdxxxxx
+/root/mailsend/bin/mailsend -smtp smtp.gmail.com -port 587 -auth -starttls -f vpsserver9@gmail.com -t yckxxx@tom.com   -sub "\`date +"%y%m%d %H:%M:%S"\` [\`hostname\`] \`ip addr show venet0 | grep venet0:0 | cut -d ' ' -f 5-6\`" -M "\`journalctl | tail -n 15\`" -user vpsserver9 -pass Abcdxxxxx
 
 
 
